@@ -4,6 +4,8 @@
 Though I don't know the origins of Project Euler, I do love it and have been solving problems for a few years now.  Most of my code is not in this repo, since I've changed machines and just recently made my github account; however, I will try to redo as many of these as possible and push them to this repo.
 
 ![alt text][euler]
+
+
 [euler]: https://micro.magnet.fsu.edu/optics/timeline/people/antiqueimages/euler.jpg
 
 # First Things First
