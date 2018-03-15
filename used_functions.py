@@ -15,3 +15,12 @@ def fibonacci_generator():
     while True:
         a, b = b, a+b
         yield b
+
+def prime_list(n):
+    prime_list=[2]
+    attempt=3
+    while len(prime_list)<n:
+        if all(attempt%i!=0 for i in prime_list): 
+            prime_list.append(attempt)
+        attempt+=2
+    return prime_list
