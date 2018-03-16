@@ -37,3 +37,18 @@ def is_prime(n):
             isPrime=False
             break
     return isPrime
+
+def factor_list(n):
+    factor_list=[]
+    check=int(n**0.5)+1
+    for i in range(1, check):
+        if n%i==0:
+            factor_list.extend([i, int(n/i)])
+    return sorted(set(factor_list))
+
+def triangle_number_generator():
+    a=1
+    b=2
+    while True:
+        a, b = b+a, b+1
+        yield a
