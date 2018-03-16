@@ -5,5 +5,4 @@ How many such routes are there through a 20×20 grid?
 """
 from math import factorial
 choose = lambda n, r: factorial(n)/(factorial(r)*factorial(n-r))
-
 print(choose(40, 20))
