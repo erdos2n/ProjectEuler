@@ -62,3 +62,14 @@ def collatz_chain(n):
             n=3*n+1
         steps+=1
     return steps
+
+def max_sum(triangle):
+    while len(triangle) > 1:
+        r0 = triangle.pop()
+        r1 = triangle.pop()
+        triangle.append([max(r0[i], r0[i+1]) + n for i,n in enumerate(r1)])
+    return triangle[0][0]
+
+def get_max_sum(filename=''):
+    f = [[int(i) for i in row.split(' ')] for row in open(filename).read().split('\n')]
+    return max_sum(f)
