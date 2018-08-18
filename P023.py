@@ -15,7 +15,9 @@ from time import time
 from used_functions import isDeficient, isAbundant
 from itertools import product, permutations, combinations_with_replacement
 
-
+"""
+Below you will see all of the code I used to test different methods. I left them here, because learning is fun!
+"""
 def get_non_abundant_list(n)->list:
     non_abundant_list = []
     for number in range(1, n + 1):
