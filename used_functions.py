@@ -46,6 +46,12 @@ def factor_list(n):
             factor_list.extend([i, int(n/i)])
     return sorted(set(factor_list))
 
+def isAbundant(n):
+    return sum_divisors(n)>n
+
+def isDeficient(n):
+    return sum_divisors(n)<n
+
 def triangle_number_generator():
     a=1
     b=2
@@ -73,3 +79,11 @@ def max_sum(triangle):
 def get_max_sum(filename=''):
     f = [[int(i) for i in row.split(' ')] for row in open(filename).read().split('\n')]
     return max_sum(f)
+
+def sum_divisors(n):
+    s, i = 0, 1
+    while i<n:
+        if n%i==0:
+            s += i
+        i += 1
+    return s
